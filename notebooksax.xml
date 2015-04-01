@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<notebook>
+<note>
+<record>meow</record>
+<date>12.12.1994</date>
+</note>
+<topicNote>
+<record>woof</record>
+<date>10.12.1994</date>
+<topic>topicone</topic>
+</topicNote>
+<note>
+<record>woof</record>
+<date>10.12.1994</date>
+</note>
+</notebook>

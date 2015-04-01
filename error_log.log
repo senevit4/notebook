@@ -1,0 +1,86 @@
+2015-03-26 08:21:26 CommandException:30 [ERROR] [Ljava.lang.StackTraceElement;@5cb0d902
+com.epam.wt.command.CommandException: DeleteAllCommand Error
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:25)
+	at com.epam.wt.controller.Controller.doRequest(Controller.java:23)
+	at com.epam.wt.view.View.run(View.java:73)
+	at com.epam.wt.view.View.main(View.java:179)
+Caused by: com.epam.wt.dao.DaoException: Find Error
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:109)
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:21)
+	... 3 more
+Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such column: ROWNUM)
+	at org.sqlite.core.DB.newSQLException(DB.java:890)
+	at org.sqlite.core.DB.newSQLException(DB.java:901)
+	at org.sqlite.core.DB.throwex(DB.java:868)
+	at org.sqlite.core.NativeDB.prepare(Native Method)
+	at org.sqlite.core.DB.prepare(DB.java:211)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:81)
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:106)
+	... 4 more
+2015-03-26 08:27:13 CommandException:30 [ERROR] [Ljava.lang.StackTraceElement;@5cb0d902
+com.epam.wt.command.CommandException: DeleteAllCommand Error
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:25)
+	at com.epam.wt.controller.Controller.doRequest(Controller.java:23)
+	at com.epam.wt.view.View.run(View.java:73)
+	at com.epam.wt.view.View.main(View.java:179)
+Caused by: com.epam.wt.dao.DaoException: Find Error
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:109)
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:21)
+	... 3 more
+Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such column: ROW_NUMBER)
+	at org.sqlite.core.DB.newSQLException(DB.java:890)
+	at org.sqlite.core.DB.newSQLException(DB.java:901)
+	at org.sqlite.core.DB.throwex(DB.java:868)
+	at org.sqlite.core.NativeDB.prepare(Native Method)
+	at org.sqlite.core.DB.prepare(DB.java:211)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:81)
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:106)
+	... 4 more
+2015-03-26 08:30:53 CommandException:30 [ERROR] [Ljava.lang.StackTraceElement;@5cb0d902
+com.epam.wt.command.CommandException: DeleteAllCommand Error
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:25)
+	at com.epam.wt.controller.Controller.doRequest(Controller.java:23)
+	at com.epam.wt.view.View.run(View.java:73)
+	at com.epam.wt.view.View.main(View.java:179)
+Caused by: com.epam.wt.dao.DaoException: Find Error
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:109)
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:21)
+	... 3 more
+Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such function: ROW_NUMBER)
+	at org.sqlite.core.DB.newSQLException(DB.java:890)
+	at org.sqlite.core.DB.newSQLException(DB.java:901)
+	at org.sqlite.core.DB.throwex(DB.java:868)
+	at org.sqlite.core.NativeDB.prepare(Native Method)
+	at org.sqlite.core.DB.prepare(DB.java:211)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:81)
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:106)
+	... 4 more
+2015-03-26 09:06:51 CommandException:30 [ERROR] [Ljava.lang.StackTraceElement;@6e5e91e4
+com.epam.wt.command.CommandException: ShowCommand Error
+	at com.epam.wt.command.impl.ShowCommand.execute(ShowCommand.java:23)
+	at com.epam.wt.controller.Controller.doRequest(Controller.java:23)
+	at com.epam.wt.view.View.run(View.java:86)
+	at com.epam.wt.view.View.main(View.java:179)
+Caused by: com.epam.wt.dao.DaoException: Show Error
+	at com.epam.wt.dao.impl.NoteBookDbImpl.showNoteBook(NoteBookDbImpl.java:149)
+	at com.epam.wt.command.impl.ShowCommand.execute(ShowCommand.java:20)
+	... 3 more
+Caused by: java.lang.NullPointerException
+	at com.epam.wt.dao.impl.NoteBookDbImpl.showNoteBook(NoteBookDbImpl.java:143)
+	... 4 more
+2015-03-26 09:44:30 CommandException:30 [ERROR] [Ljava.lang.StackTraceElement;@2cdf8d8a
+com.epam.wt.command.CommandException: DeleteAllCommand Error
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:25)
+	at com.epam.wt.controller.Controller.doRequest(Controller.java:23)
+	at com.epam.wt.view.View.run(View.java:73)
+	at com.epam.wt.view.View.main(View.java:179)
+Caused by: com.epam.wt.dao.DaoException: Find Error
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:111)
+	at com.epam.wt.command.impl.FindNoteCommand.execute(FindNoteCommand.java:21)
+	... 3 more
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.core.CoreResultSet.checkOpen(CoreResultSet.java:66)
+	at org.sqlite.core.CoreResultSet.markCol(CoreResultSet.java:93)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getString(JDBC3ResultSet.java:441)
+	at com.epam.wt.dao.impl.NoteBookDbImpl.findNote(NoteBookDbImpl.java:108)
+	... 4 more
